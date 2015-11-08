@@ -1,2 +1,1 @@
-# crs
-Cancer Research Society website
+# Cancer Research Society

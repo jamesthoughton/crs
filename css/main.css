@@ -1,0 +1,19 @@
+html, body {
+	margin:0;
+	background-color:white;
+	font-family:'Open Sans',sans-serif,Helvetica;
+}
+.title {
+	background-color:#45749E;
+	background-repeat:repeat-x;
+	color:white;
+	display:block;
+}
+h1#title {
+	font-size:50px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+h1 {
+	text-align:center;
+}

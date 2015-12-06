@@ -31,6 +31,10 @@ h1 {
 #menu > .col-sm-3 {
 	margin-bottom:10px;
 }
+#pwrap {
+	opacity:0;
+	transition: opacity 200ms;
+}
 .navtitle {
 	background-color:white;
 	border: 1px solid #2B4BBF;

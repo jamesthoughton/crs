@@ -7,7 +7,6 @@ $(document).ready(function() {
 	var ind = url.indexOf('#');
 	clicked = "a#aboutl";
 	if(ind > 0) {
-		console.log(url.substring(ind));
 		switch(url.substring(ind)) {
 			case "#about":
 				clicked = "a#aboutl";
@@ -23,28 +22,32 @@ $(document).ready(function() {
 				break;
 		}
 	}
-
+	$('#pwrap').css('opacity',1);
 	// Hook click functions
 	$('a#calendarl').click(function () {
-		$('#partial').load('partials/calendar.html');
+		$('#pwrap').css('opacity',0);
+		$('#partial').load('partials/calendar.html',function(){$('#pwrap').css('opacity',1);});
 		$(clicked).removeClass('engaged');
 		clicked = "a#calendarl";
 		$(this).addClass('engaged');
 	});
 	$('a#aboutl').click(function () {
-		$('#partial').load('partials/about.html');
+		$('#pwrap').css('opacity',0);
+		$('#partial').load('partials/about.html',function(){$('#pwrap').css('opacity',1);});
 		$(clicked).removeClass('engaged');
 		clicked = "a#aboutl";
 		$(this).addClass('engaged');
 	});
 	$('a#resourcesl').click(function () {
-		$('#partial').load('partials/resources.html');
+		$('#pwrap').css('opacity',0);
+		$('#partial').load('partials/resources.html',function(){$('#pwrap').css('opacity',1);});
 		$(clicked).removeClass('engaged');
 		clicked = "a#resourcesl";
 		$(this).addClass('engaged');
 	});
 	$('a#newsl').click(function () { 
-		$('#partial').load('partials/news/news.php');
+		$('#pwrap').css('opacity',0);
+		$('#partial').load('partials/news/news.php',function(){$('#pwrap').css('opacity',1);});
 		$(clicked).removeClass('engaged');
 		clicked = "a#newsl";
 		$(this).addClass('engaged');

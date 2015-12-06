@@ -6,51 +6,64 @@ $(document).ready(function() {
 	var url = document.URL;
 	var ind = url.indexOf('#');
 	clicked = "a#aboutl";
-	if(ind > 0) {
-		switch(url.substring(ind)) {
-			case "#about":
-				clicked = "a#aboutl";
-				break;
-			case "#news":
-				clicked = "a#newsl";
-				break;
-			case "#resources":
-				clicked = "a#resourcesl";
-				break;
-			case "#calendar":
-				clicked = "a#calendarl";
-				break;
-		}
+	if(ind < 0) { ind = 0; }
+	switch(url.substring(ind)) {
+		case "#about":
+			clicked = "a#aboutl";
+			$('#partial').load('partials/about.html');
+			break;
+		case "#news":
+			clicked = "a#newsl";
+			$('#partial').load('partials/news.html');
+			break;
+		case "#resources":
+			clicked = "a#resourcesl";
+			$('#partial').load('partials/resources.html');
+			break;
+		case "#calendar":
+			clicked = "a#calendarl";
+			$('#partial').load('partials/calendar.html');
+			break;
+		default:
+			$('#partial').load('partials/about.html');
 	}
+	$(clicked).addClass('engaged');
 	$('#pwrap').css('opacity',1);
 	// Hook click functions
 	$('a#calendarl').click(function () {
-		$('#pwrap').css('opacity',0);
-		$('#partial').load('partials/calendar.html',function(){$('#pwrap').css('opacity',1);});
 		$(clicked).removeClass('engaged');
 		clicked = "a#calendarl";
-		$(this).addClass('engaged');
+		$(clicked).addClass('engaged');
+		$('#pwrap').css('opacity',0);
+		window.setTimeout(function () {
+			$('#partial').load('partials/calendar.html',function(){$('#pwrap').css('opacity',1);});
+		}, 200);
 	});
 	$('a#aboutl').click(function () {
-		$('#pwrap').css('opacity',0);
-		$('#partial').load('partials/about.html',function(){$('#pwrap').css('opacity',1);});
 		$(clicked).removeClass('engaged');
 		clicked = "a#aboutl";
-		$(this).addClass('engaged');
+		$(clicked).addClass('engaged');
+		$('#pwrap').css('opacity',0);
+		window.setTimeout(function () {
+			$('#partial').load('partials/about.html',function(){$('#pwrap').css('opacity',1);});
+		}, 200);
 	});
 	$('a#resourcesl').click(function () {
-		$('#pwrap').css('opacity',0);
-		$('#partial').load('partials/resources.html',function(){$('#pwrap').css('opacity',1);});
 		$(clicked).removeClass('engaged');
 		clicked = "a#resourcesl";
-		$(this).addClass('engaged');
+		$(clicked).addClass('engaged');
+		$('#pwrap').css('opacity',0);
+		window.setTimeout(function () {
+			$('#partial').load('partials/resources.html',function(){$('#pwrap').css('opacity',1);});
+		}, 200);
 	});
 	$('a#newsl').click(function () { 
-		$('#pwrap').css('opacity',0);
-		$('#partial').load('partials/news/news.php',function(){$('#pwrap').css('opacity',1);});
 		$(clicked).removeClass('engaged');
 		clicked = "a#newsl";
-		$(this).addClass('engaged');
+		$(clicked).addClass('engaged');
+		$('#pwrap').css('opacity',0);
+		window.setTimeout(function () {
+			$('#partial').load('partials/news.html',function(){$('#pwrap').css('opacity',1);});
+		}, 200);
 	});
-	$(clicked).click(); // Click about
 });

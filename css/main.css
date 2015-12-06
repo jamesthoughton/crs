@@ -77,3 +77,12 @@ a.navlink.engaged, a.navlink:hover {
 	background-image:-o-linear-gradient(left, transparent, white, white, white, white, white, white, transparent);
 	background-image:linear-gradient(to right, transparent, white, white, white, white, white, white, transparent);
 }
+p.lead {
+	/*
+	margin-left:10px;
+	margin-right:10px;
+	*/
+}
+h2.featurette-heading {
+	text-align:center;
+}

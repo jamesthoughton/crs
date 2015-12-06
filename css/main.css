@@ -10,6 +10,10 @@ html, body {
 	color:white;
 	display:block;
 }
+.contentback {
+	background-image:url('../img/acoli.jpg');
+	background-image:repeat;
+}
 h1#title {
 	font-size:50px;
 	margin-top:20px;
@@ -34,9 +38,12 @@ h1 {
 a.navlink.engaged > .navtitle, .navtitle:hover {
 	background-color:#45749E; 
 }
+#content {
+	border-width: 0 0 0 60px;
+	border-style: solid;
+	border-image: linear-gradient(to right, transparent, white) 1 100%; 
+}
 #partial {
-	border-radius:5px;
-	border:2px solid #45749E;
 	background-color:white;
 	color:#5A5A5A;
 }

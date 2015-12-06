@@ -34,9 +34,11 @@ h1 {
 a.navlink.engaged > .navtitle, .navtitle:hover {
 	background-color:#45749E; 
 }
-#content {
+#partial {
 	border-radius:5px;
-	background-color:grey;
+	border:2px solid #45749E;
+	background-color:white;
+	color:#5A5A5A;
 }
 a.navlink {
 	color:#45749E;

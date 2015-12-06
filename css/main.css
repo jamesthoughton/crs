@@ -35,6 +35,8 @@ a.navlink.engaged > .navtitle, .navtitle:hover {
 	background-color:#45749E; 
 }
 #content {
+	border-radius:5px;
+	background-color:grey;
 }
 a.navlink {
 	color:#45749E;
@@ -44,3 +46,4 @@ a.navlink {
 a.navlink.engaged, a.navlink:hover {
 	color:white;
 }
+

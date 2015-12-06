@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/news.css">
 <div class="col-md-7">
 	<h2 class="featurette-heading" style="text-align:center;">News</h2>
 	<p class="lead" style="margin-left:10px;margin-right:10px;">

@@ -48,7 +48,7 @@ h1 {
 }
 #pwrap {
 	opacity:0;
-	transition: opacity 200ms;
+	transition: opacity 350ms;
 }
 .navtitle {
 	background-color:white;
@@ -84,14 +84,18 @@ a.navlink.engaged, a.navlink:hover {
 	color:black;
 }
 #content {
-	max-height:0;
-	transition:max-height 300ms;
-	overflow-y:hidden;
 	background-image:url('../img/acoli.jpg');
 	background-image:repeat;
 	border-bottom:2px #2B4BBF solid;
 	border-top:2px #2B4BBF solid;
 }
+/* @media screen and (max-width:800px) { */
+	#content {
+		max-height:0;
+		transition:max-height 400ms;
+		overflow-y:hidden;
+	}
+/* } */
 p.lead {
 	/*
 	margin-left:10px;

@@ -30,8 +30,8 @@ $(document).ready(function() {
 	function endclick() {
 		window.setTimeout(function() {
 			$('#pwrap').css('opacity',1);
-			$('#content').css('max-height',1000);
-		}, 120);
+			$('#content').css('max-height',2000);
+		}, 300);
 	};
 	$(clicked).addClass('engaged');
 	$('#pwrap').css('opacity',1);
@@ -46,7 +46,7 @@ $(document).ready(function() {
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/about.html',endclick());
-		}, 200);
+		}, 250);
 	});
 	$('a#resourcesl').click(function () {
 		if(clicked === "a#resourcesl") return;
@@ -57,7 +57,7 @@ $(document).ready(function() {
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/resources.html',endclick());
-		}, 200);
+		}, 250);
 	});
 	$('a#newsl').click(function () { 
 		if(clicked === "a#newsl") return;
@@ -68,7 +68,7 @@ $(document).ready(function() {
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/news.html',endclick());
-		}, 200);
+		}, 250);
 	});
 	$('a#calendarl').click(function () {
 		if(clicked === "a#calendarl") return;
@@ -79,6 +79,6 @@ $(document).ready(function() {
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/calendar.html',endclick());
-		}, 300);
+		}, 250);
 	});
 });

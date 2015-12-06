@@ -31,6 +31,7 @@ $(document).ready(function() {
 	$('#pwrap').css('opacity',1);
 	// Hook click functions
 	$('a#calendarl').click(function () {
+		if(clicked === "a#calendarl") return;
 		$(clicked).removeClass('engaged');
 		clicked = "a#calendarl";
 		$(clicked).addClass('engaged');
@@ -40,6 +41,7 @@ $(document).ready(function() {
 		}, 200);
 	});
 	$('a#aboutl').click(function () {
+		if(clicked === "a#aboutl") return;
 		$(clicked).removeClass('engaged');
 		clicked = "a#aboutl";
 		$(clicked).addClass('engaged');
@@ -49,6 +51,7 @@ $(document).ready(function() {
 		}, 200);
 	});
 	$('a#resourcesl').click(function () {
+		if(clicked === "a#resourcesl") return;
 		$(clicked).removeClass('engaged');
 		clicked = "a#resourcesl";
 		$(clicked).addClass('engaged');
@@ -58,6 +61,7 @@ $(document).ready(function() {
 		}, 200);
 	});
 	$('a#newsl').click(function () { 
+		if(clicked === "a#newsl") return;
 		$(clicked).removeClass('engaged');
 		clicked = "a#newsl";
 		$(clicked).addClass('engaged');

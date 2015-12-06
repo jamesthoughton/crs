@@ -1,6 +1,8 @@
 var clicked;
 
 $(document).ready(function() {
+
+	// Hook hash
 	var url = document.URL;
 	var ind = url.indexOf('#');
 	clicked = "a#aboutl";
@@ -21,6 +23,7 @@ $(document).ready(function() {
 				break;
 		}
 	}
+
 	// Hook click functions
 	$('a#calendarl').click(function () {
 		$('#partial').load('partials/calendar.html');

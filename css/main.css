@@ -46,4 +46,7 @@ a.navlink {
 a.navlink.engaged, a.navlink:hover {
 	color:white;
 }
+.footer {
+	color:black;
+}
 

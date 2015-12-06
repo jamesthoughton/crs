@@ -91,3 +91,6 @@ h2.featurette-heading {
 h2.center {
 	text-align:center;
 }
+p.error {
+	text-align:center;
+}

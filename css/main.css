@@ -64,6 +64,7 @@ a.navlink.engaged > .navtitle, .navtitle:hover {
 	color:#5A5A5A;
 	padding-left:10px;
 	padding-right:20px;
+	margin-bottom:20px;
 }
 ::selection {
 	background: #8BBBFF;
@@ -83,6 +84,9 @@ a.navlink.engaged, a.navlink:hover {
 	color:black;
 }
 #content {
+	max-height:0;
+	transition:max-height 300ms;
+	overflow-y:hidden;
 	background-image:url('../img/acoli.jpg');
 	background-image:repeat;
 	border-bottom:2px #2B4BBF solid;
@@ -102,4 +106,6 @@ h2.center {
 }
 p.error {
 	text-align:center;
+}
+.pwrap2 {
 }

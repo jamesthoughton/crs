@@ -27,27 +27,25 @@ $(document).ready(function() {
 		default:
 			$('#partial').load('partials/about.html');
 	}
+	function endclick() {
+		window.setTimeout(function() {
+			$('#pwrap').css('opacity',1);
+			$('#content').css('max-height',1000);
+		}, 120);
+	};
 	$(clicked).addClass('engaged');
 	$('#pwrap').css('opacity',1);
+	$('#content').css('max-height',2000);
 	// Hook click functions
-	$('a#calendarl').click(function () {
-		if(clicked === "a#calendarl") return;
-		$(clicked).removeClass('engaged');
-		clicked = "a#calendarl";
-		$(clicked).addClass('engaged');
-		$('#pwrap').css('opacity',0);
-		window.setTimeout(function () {
-			$('#partial').load('partials/calendar.html',function(){$('#pwrap').css('opacity',1);});
-		}, 200);
-	});
 	$('a#aboutl').click(function () {
 		if(clicked === "a#aboutl") return;
 		$(clicked).removeClass('engaged');
 		clicked = "a#aboutl";
 		$(clicked).addClass('engaged');
+		$('#content').css('max-height',0);
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
-			$('#partial').load('partials/about.html',function(){$('#pwrap').css('opacity',1);});
+			$('#partial').load('partials/about.html',endclick());
 		}, 200);
 	});
 	$('a#resourcesl').click(function () {
@@ -55,9 +53,10 @@ $(document).ready(function() {
 		$(clicked).removeClass('engaged');
 		clicked = "a#resourcesl";
 		$(clicked).addClass('engaged');
+		$('#content').css('max-height',0);
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
-			$('#partial').load('partials/resources.html',function(){$('#pwrap').css('opacity',1);});
+			$('#partial').load('partials/resources.html',endclick());
 		}, 200);
 	});
 	$('a#newsl').click(function () { 
@@ -65,9 +64,21 @@ $(document).ready(function() {
 		$(clicked).removeClass('engaged');
 		clicked = "a#newsl";
 		$(clicked).addClass('engaged');
+		$('#content').css('max-height',0);
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
-			$('#partial').load('partials/news.html',function(){$('#pwrap').css('opacity',1);});
+			$('#partial').load('partials/news.html',endclick());
 		}, 200);
+	});
+	$('a#calendarl').click(function () {
+		if(clicked === "a#calendarl") return;
+		$(clicked).removeClass('engaged');
+		clicked = "a#calendarl";
+		$(clicked).addClass('engaged');
+		$('#content').css('max-height',0);
+		$('#pwrap').css('opacity',0);
+		window.setTimeout(function () {
+			$('#partial').load('partials/calendar.html',endclick());
+		}, 300);
 	});
 });

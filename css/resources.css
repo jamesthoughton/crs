@@ -1,3 +1,20 @@
 #links > table {
 	width:100%;
 }
+td {
+	width:33%;
+}
+tr {	
+	border-top: 1px lightgrey solid;
+}
+tr.top {
+	border-top:none;
+}
+td {
+	border-left: 1px lightgrey solid;
+	padding-left:5px;
+	padding-right:5px;
+}
+td.left {
+	border-left:none;
+}

@@ -1,6 +1,7 @@
-var clicked;
-
 $(document).ready(function() {
+
+	var clicked;
+	var clicking = 0;
 
 	// Hook hash
 	var url = document.URL;
@@ -31,7 +32,7 @@ $(document).ready(function() {
 		window.setTimeout(function() {
 			$('#pwrap').css('opacity',1);
 			$('#content').css('max-height',2000);
-			window.setTimeout(function(){$('#content').css('max-height',100000);$('#content').css('max-height',$('#content').height()+100);},500);
+			window.setTimeout(function(){$('#content').css('max-height',100000);$('#content').css('max-height',$('#content').height()+100);clicking=0;},500);
 		}, 300);
 	};
 	$(clicked).addClass('engaged');
@@ -40,7 +41,8 @@ $(document).ready(function() {
 	window.setTimeout(function(){$('#content').css('max-height',100000);$('#content').css('max-height',$('#content').height()+100);},500);
 	// Hook click functions
 	$('a#aboutl').click(function () {
-		if(clicked === "a#aboutl") return;
+		if(clicked === "a#aboutl" || clicking === 1) return;
+		clicking = 1;
 		$(clicked).removeClass('engaged');
 		clicked = "a#aboutl";
 		$(clicked).addClass('engaged');
@@ -51,7 +53,8 @@ $(document).ready(function() {
 		}, 250);
 	});
 	$('a#resourcesl').click(function () {
-		if(clicked === "a#resourcesl") return;
+		if(clicked === "a#resourcesl" || clicking === 1) return;
+		clicking = 1;
 		$(clicked).removeClass('engaged');
 		clicked = "a#resourcesl";
 		$(clicked).addClass('engaged');
@@ -62,7 +65,8 @@ $(document).ready(function() {
 		}, 250);
 	});
 	$('a#newsl').click(function () { 
-		if(clicked === "a#newsl") return;
+		if(clicked === "a#newsl" || clicking === 1) return;
+		clicking = 1;
 		$(clicked).removeClass('engaged');
 		clicked = "a#newsl";
 		$(clicked).addClass('engaged');
@@ -73,7 +77,8 @@ $(document).ready(function() {
 		}, 250);
 	});
 	$('a#calendarl').click(function () {
-		if(clicked === "a#calendarl") return;
+		if(clicked === "a#calendarl" || clicking === 1) return;
+		clicking = 1;
 		$(clicked).removeClass('engaged');
 		clicked = "a#calendarl";
 		$(clicked).addClass('engaged');

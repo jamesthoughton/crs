@@ -50,7 +50,7 @@ $(document).ready(function() {
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/about.html',endclick());
-		}, 250);
+		}, 550);
 	});
 	$('a#resourcesl').click(function () {
 		if(clicked === "a#resourcesl" || clicking === 1) return;
@@ -62,7 +62,7 @@ $(document).ready(function() {
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/resources.html',endclick());
-		}, 250);
+		}, 550);
 	});
 	$('a#newsl').click(function () { 
 		if(clicked === "a#newsl" || clicking === 1) return;
@@ -74,7 +74,7 @@ $(document).ready(function() {
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/news.html',endclick());
-		}, 250);
+		}, 550);
 	});
 	$('a#calendarl').click(function () {
 		if(clicked === "a#calendarl" || clicking === 1) return;
@@ -86,6 +86,6 @@ $(document).ready(function() {
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/calendar.html',endclick());
-		}, 250);
+		}, 550);
 	});
 });

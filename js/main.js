@@ -47,7 +47,8 @@ $(document).ready(function() {
 		clicked = "a#aboutl";
 		$(clicked).addClass('engaged');
 		$('#content').css('max-height',0);
-		$('#pwrap').css('opacity',0);
+		if($(document).width() > 990)
+			$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/about.html',endclick());
 		}, 550);
@@ -59,7 +60,8 @@ $(document).ready(function() {
 		clicked = "a#resourcesl";
 		$(clicked).addClass('engaged');
 		$('#content').css('max-height',0);
-		$('#pwrap').css('opacity',0);
+		if($(document).width() > 990)
+			$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/resources.html',endclick());
 		}, 550);
@@ -71,7 +73,8 @@ $(document).ready(function() {
 		clicked = "a#newsl";
 		$(clicked).addClass('engaged');
 		$('#content').css('max-height',0);
-		$('#pwrap').css('opacity',0);
+		if($(document).width() > 990)
+			$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/news.html',endclick());
 		}, 550);
@@ -83,9 +86,11 @@ $(document).ready(function() {
 		clicked = "a#calendarl";
 		$(clicked).addClass('engaged');
 		$('#content').css('max-height',0);
-		$('#pwrap').css('opacity',0);
+		if($(document).width() > 990)
+			$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
 			$('#partial').load('partials/calendar.html',endclick());
 		}, 550);
 	});
+	$(".loading").addClass("invisible");
 });

@@ -5,7 +5,7 @@ html, body {
 	font-family:'Open Sans',sans-serif,Helvetica;
 }
 .title {
-	background-color:#2B4BBF;
+	background-color:#000099;
 	background-repeat:repeat-x;
 	color:white;
 	display:block;
@@ -46,21 +46,23 @@ h1 {
 #menu > .col-sm-3 {
 	margin-bottom:10px;
 }
-#pwrap {
-	opacity:0;
-	transition: opacity 350ms;
+@media screen and (min-width:990px) {
+	#pwrap {
+		opacity:0;
+		transition: opacity 350ms;
+	}
 }
 .navtitle {
 	background-color:white;
-	border: 1px solid #2B4BBF;
+	border: 1px solid #000099;
 	border-radius:5px;
 	transition:background-color 150ms;
 }
 a.navlink.engaged > .navtitle, .navtitle:hover {
-	background-color:#2B4BBF;
+	background-color:#000099;
 }
 #partial {
-	background-color:white;
+	background-color:transparent;
 	color:#5A5A5A;
 	padding-left:10px;
 	padding-right:20px;
@@ -73,7 +75,7 @@ a.navlink.engaged > .navtitle, .navtitle:hover {
 	background: #8BBBFF;
 }
 a.navlink {
-	color:#2B4BBF;
+	color:#000099;
 	text-decoration:none;
 	transition:color 150ms;
 }
@@ -86,12 +88,12 @@ a.navlink.engaged, a.navlink:hover {
 #content {
 	background-image:url('../img/acoli.jpg');
 	background-image:repeat;
-	border-bottom:2px #2B4BBF solid;
-	border-top:2px #2B4BBF solid;
+	border-bottom:2px #000099 solid;
+	border-top:2px #000099 solid;
 }
 /* @media screen and (max-width:800px) { */
 	#content {
-		max-height:0;
+		max-height:40;
 		transition:max-height 800ms;
 		overflow-y:hidden;
 	}
@@ -111,4 +113,17 @@ h2.center {
 p.error {
 	text-align:center;
 	color:white;
+}
+p.loading {
+	color:grey;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:2;
+	text-align:center;
+	height:0;
+	margin-bottom:0;
+	font-size:40px;
+}
+.invisible {
+	display:none;
 }

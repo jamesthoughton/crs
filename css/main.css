@@ -18,14 +18,16 @@ html, body {
 #mwrapper {
 	background-color:black;
 }
-/*
 .contentback {
-	background-color:transparent;
+	background:white url("../img/organic.png") no-repeat -150px 40%;
+	/*
 	background-image:-webkit-linear-gradient(left, transparent, white, white, white, white, white, white, transparent);
 	background-image:-moz-linear-gradient(left, transparent, white, white, white, white, white, white, transparent);
 	background-image:-o-linear-gradient(left, transparent, white, white, white, white, white, white, transparent);
 	background-image:linear-gradient(to right, transparent, white, white, white, white, white, white, transparent);
+	*/
 }
+/*
 @media screen and (max-width:1600px) {
 	.contentback {
 		background-color:transparent;
@@ -120,7 +122,7 @@ a.navlink.engaged, a.navlink:hover {
 	overflow-y:hidden;
 }
 .mhtransition {
-	transition:max-height 800ms;
+	transition:max-height 700ms;
 }
 /* } */
 p.lead {

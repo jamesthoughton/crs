@@ -32,7 +32,7 @@ $(document).ready(function() {
 		window.setTimeout(function() {
 			$('#pwrap').css('opacity',1);
 			$('#content').css('max-height',2000);
-			window.setTimeout(function(){$('#content').css('max-height',100000);clicking=0;},500);
+			window.setTimeout(function(){$('#content').css('max-height',100000);clicking=0;},300);
 		}, 300);
 	};
 	$(clicked).addClass('engaged');

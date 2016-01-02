@@ -1,6 +1,13 @@
 p.officer {
 	margin-bottom:10px;
 }
+p.lead.officer {
+	width:100%;
+	text-align:center;
+}
+img.officerimage {
+	width:100%;
+}
 p.info {
 	font-size:15px;
 }

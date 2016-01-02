@@ -37,8 +37,7 @@ $(document).ready(function() {
 	};
 	$(clicked).addClass('engaged');
 	$('#pwrap').css('opacity',1);
-	$('#content').css('max-height',2000);
-	window.setTimeout(function(){$('#content').css('max-height',100000);$('#content').css('max-height',$('#content').height()+100);},500);
+	// window.setTimeout(function(){$('#content').css('max-height',100000);$('#content').css('max-height',$('#content').height()+100);},500);
 	// Hook click functions
 	$('a#aboutl').click(function () {
 		if(clicked === "a#aboutl" || clicking === 1) return;

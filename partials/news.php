@@ -25,7 +25,7 @@
 				fclose($file);
 			}
 			$count = 0;
-			foreach(scandir("news_posts/",0) as $name) {
+			foreach(scandir("news_posts/",1) as $name) {
 				if ($name[0] !== ".") {
 					if($count != 0) echo "<hr>";
 					$count++;

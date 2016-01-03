@@ -5,6 +5,9 @@ html, body {
 	font-family:'Open Sans',sans-serif,Helvetica;
 	min-width:400px;
 }
+hr {
+	border:1px solid #ccc;
+}
 .title {
 	background-image:url('../img/breastcancer.jpg');
 	background-repeat:stretch;

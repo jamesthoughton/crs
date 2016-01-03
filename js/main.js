@@ -15,7 +15,7 @@ $(document).ready(function() {
 			break;
 		case "#news":
 			clicked = "a#newsl";
-			$('#partial').load('partials/news.html');
+			$('#partial').load('partials/news.php');
 			break;
 		case "#resources":
 			clicked = "a#resourcesl";
@@ -78,7 +78,7 @@ $(document).ready(function() {
 		$(clicked).addClass('engaged');
 		$('#pwrap').css('opacity',0);
 		window.setTimeout(function () {
-			$('#partial').load('partials/news.html',endclick());
+			$('#partial').load('partials/news.php',endclick());
 		}, 600);
 	});
 	$('a#calendarl').click(function () {

@@ -135,7 +135,6 @@ a.navlink.engaged, a.navlink:hover {
 }
 /* @media screen and (max-width:800px) { */
 #content {
-	max-height:40;
 	overflow-y:hidden;
 }
 .mhtransition {

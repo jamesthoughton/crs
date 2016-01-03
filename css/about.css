@@ -1,6 +1,11 @@
 p.officer {
 	margin-bottom:10px;
 }
+h2 {
+	width:100%;
+	text-align:center;
+	margin-top:0;
+}
 p.lead.officer {
 	width:100%;
 	text-align:center;
@@ -9,9 +14,10 @@ img.officerimage {
 	width:100%;
 }
 p.info {
+	margin-top:10px;
 	font-size:15px;
 }
 p.mission {
-	padding-left:10%;
-	padding-right:10%;
+	padding-left:15px;
+	padding-right:15px;
 }

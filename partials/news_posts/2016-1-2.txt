@@ -1,7 +1,0 @@
-January 1, 1970
-James Houghton
-Test post
-asd
-Oh I know what the problem is:
-it's reading the tmp file
-ez fix in php code

@@ -18,3 +18,6 @@ td {
 td.left {
 	border-left:none;
 }
+.links {
+	margin-top:-10px;
+}

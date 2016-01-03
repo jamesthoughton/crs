@@ -106,10 +106,10 @@ a.navlink.engaged > .navtitle, .navtitle:hover {
 	margin-bottom:20px;
 }
 ::selection {
-	background: #8BBBFF;
+	background:#DC809A;
 }
 ::-moz-selection {
-	background: #8BBBFF;
+	background:#DC809A;
 }
 a.navlink {
 	color:#8C003A;

@@ -37,12 +37,12 @@ $(document).ready(function() {
 	};
 	$(clicked).addClass('engaged');
 	$('#pwrap').css('opacity',1);
-	// window.setTimeout(function(){$('#content').css('max-height',100000);$('#content').css('max-height',$('#content').height()+100);},500);
+	// window.setTimeout(function(){$('#content').css('max-height',100000);$('#content').css('max-height',$('#content').height());},500);
 	// Hook click functions
 	$('a#aboutl').click(function () {
 		if(clicked === "a#aboutl" || clicking === 1) return;
 		$('#content').removeClass('mhtransition');
-		$('#content').css('max-height',$('#content').height()+100)
+		$('#content').css('max-height',$('#content').height())
 		window.setTimeout(function(){$('#content').addClass('mhtransition');$('#content').css('max-height',0);},10);
 		clicking = 1;
 		$(clicked).removeClass('engaged');
@@ -56,7 +56,7 @@ $(document).ready(function() {
 	$('a#resourcesl').click(function () {
 		if(clicked === "a#resourcesl" || clicking === 1) return;
 		$('#content').removeClass('mhtransition');
-		$('#content').css('max-height',$('#content').height()+100)
+		$('#content').css('max-height',$('#content').height())
 		window.setTimeout(function(){$('#content').addClass('mhtransition');$('#content').css('max-height',0);},10);
 		clicking = 1;
 		$(clicked).removeClass('engaged');
@@ -70,7 +70,7 @@ $(document).ready(function() {
 	$('a#newsl').click(function () { 
 		if(clicked === "a#newsl" || clicking === 1) return;
 		$('#content').removeClass('mhtransition');
-		$('#content').css('max-height',$('#content').height()+100)
+		$('#content').css('max-height',$('#content').height())
 		window.setTimeout(function(){$('#content').addClass('mhtransition');$('#content').css('max-height',0);},10);
 		clicking = 1;
 		$(clicked).removeClass('engaged');
@@ -84,7 +84,7 @@ $(document).ready(function() {
 	$('a#calendarl').click(function () {
 		if(clicked === "a#calendarl" || clicking === 1) return;
 		$('#content').removeClass('mhtransition');
-		$('#content').css('max-height',$('#content').height()+100)
+		$('#content').css('max-height',$('#content').height())
 		window.setTimeout(function(){$('#content').addClass('mhtransition');$('#content').css('max-height',0);},10);
 		clicking = 1;
 		$(clicked).removeClass('engaged');

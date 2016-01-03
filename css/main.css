@@ -78,11 +78,9 @@ h1 {
 }
 #menu > .col-sm-3 {
 }
-@media screen and (min-width:990px) {
-	#pwrap {
-		opacity:0;
-		transition: opacity 350ms;
-	}
+#pwrap {
+	opacity:0;
+	transition: opacity 350ms;
 }
 .navtitle {
 	/* background-color:white; */

@@ -39,58 +39,41 @@ $(document).ready(function() {
 	$('#pwrap').css('opacity',1);
 	// window.setTimeout(function(){$('#content').css('max-height',100000);$('#content').css('max-height',$('#content').height());},500);
 	// Hook click functions
-	$('a#aboutl').click(function () {
-		if(clicked === "a#aboutl" || clicking === 1) return;
+	function clickfunc(str) {
 		$('#content').removeClass('mhtransition');
 		$('#content').css('max-height',$('#content').height())
 		window.setTimeout(function(){$('#content').addClass('mhtransition');$('#content').css('max-height',0);},10);
 		clicking = 1;
 		$(clicked).removeClass('engaged');
-		clicked = "a#aboutl";
+		clicked = str;
 		$(clicked).addClass('engaged');
 		$('#pwrap').css('opacity',0);
+	}
+	//
+	$('a#aboutl').click(function () {
+		if(clicked === "a#aboutl" || clicking === 1) return;
+		clickfunc("a#aboutl");
 		window.setTimeout(function () {
 			$('#partial').load('partials/about.html',endclick());
 		}, 600);
 	});
 	$('a#resourcesl').click(function () {
 		if(clicked === "a#resourcesl" || clicking === 1) return;
-		$('#content').removeClass('mhtransition');
-		$('#content').css('max-height',$('#content').height())
-		window.setTimeout(function(){$('#content').addClass('mhtransition');$('#content').css('max-height',0);},10);
-		clicking = 1;
-		$(clicked).removeClass('engaged');
-		clicked = "a#resourcesl";
-		$(clicked).addClass('engaged');
-		$('#pwrap').css('opacity',0);
+		clickfunc("a#resourcesl");
 		window.setTimeout(function () {
 			$('#partial').load('partials/resources.html',endclick());
 		}, 600);
 	});
-	$('a#newsl').click(function () { 
+	$('a#newsl').click(function () {
 		if(clicked === "a#newsl" || clicking === 1) return;
-		$('#content').removeClass('mhtransition');
-		$('#content').css('max-height',$('#content').height())
-		window.setTimeout(function(){$('#content').addClass('mhtransition');$('#content').css('max-height',0);},10);
-		clicking = 1;
-		$(clicked).removeClass('engaged');
-		clicked = "a#newsl";
-		$(clicked).addClass('engaged');
-		$('#pwrap').css('opacity',0);
+		clickfunc("a#newsl");
 		window.setTimeout(function () {
 			$('#partial').load('partials/news.php',endclick());
 		}, 600);
 	});
 	$('a#calendarl').click(function () {
 		if(clicked === "a#calendarl" || clicking === 1) return;
-		$('#content').removeClass('mhtransition');
-		$('#content').css('max-height',$('#content').height())
-		window.setTimeout(function(){$('#content').addClass('mhtransition');$('#content').css('max-height',0);},10);
-		clicking = 1;
-		$(clicked).removeClass('engaged');
-		clicked = "a#calendarl";
-		$(clicked).addClass('engaged');
-		$('#pwrap').css('opacity',0);
+		clickfunc("a#calendarl");
 		window.setTimeout(function () {
 			$('#partial').load('partials/calendar.html',endclick());
 		}, 600);

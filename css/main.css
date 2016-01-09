@@ -10,7 +10,6 @@ hr {
 }
 .title {
 	background-image:url('../img/breastcancer.jpg');
-	background-repeat:stretch;
 	background-size:cover;
 	color:white;
 	display:block;

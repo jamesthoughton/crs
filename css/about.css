@@ -1,6 +1,12 @@
 p.officer {
 	margin-bottom:10px;
 }
+p.role {
+	width:100%;
+	text-align:center;
+	font-size:18px;
+	margin-top:10px;
+}
 h2 {
 	width:100%;
 	text-align:center;

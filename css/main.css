@@ -181,3 +181,11 @@ p.loading {
 	padding-right: 5px;
 	padding-left: 5px;
 }
+.officer-d {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px #AAA solid;
+}
+.officer-d:last-of-type {
+    border: none;
+}
